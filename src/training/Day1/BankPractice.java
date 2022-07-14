@@ -2,34 +2,32 @@ package training.Day1;
 
 public class BankPractice {
     public static void main(String[] args){
+        Account account = new Account();
 
-        int a = 5;
-        int b = 2;
+//        account.accountName = "ABC";
+//        account.accountNumber = "123456789";
+//        account.accountType = "SAVING";
+//        account.amount = 5080.0;
+//        account.address = "test address";
+//        account.phoneNumber = "987654321";
+//        account.ssn = "147852369";
 
-        int c =addTwoNumbers(a,b);
-        // int c = a+b;
-        System.out.println(c);
+        account.setAccountName("ABC");
+        account.setAccountNumber("123456789");
+        account.setAccountType("SAVING");
+        account.setAmount(5080.0);
+        account.setAddress("test address");
+        account.setPhoneNumber("987654321");
+        account.setSsn("147852369");
 
-        int d = 5;
-        int e = 5;
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountType());
+        System.out.println(account.getAmount());
+        System.out.println(account.getAddress());
+        System.out.println(account.getPhoneNumber());
+  //      System.out.println(account.getSsn());
 
-        int f = addTwoNumbers(d,e);
-        //int f = d+e;
-        System.out.println(f);
 
-        int g = 5;
-        int h = 10;
-
-        int i = addTwoNumbers(g,h);
-        //int i = g+h;
-        System.out.println(i);
-
-    }
-
-    public static int addTwoNumbers(int a, int b)
-    {
-        int temp = a+b;
-        return temp;
-        //System.out.println(temp);
     }
 }
